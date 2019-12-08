@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile first */
+
+/*--------------- Navegación ---------------*/
+.nav-container {
+    position: fixed;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 1000;
+}
+
+nav {font-family: 'IBM Plex Mono', monospace;}
+
+.nav-header {
+    padding: .6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-header i {
+    color: #060A24;
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style-type: none;
+    color: #FFFFFF;
+    background-color: #0000EC;
+    display: none;
+}
+
+nav ul li {padding: .8em .6em;}
+
+nav ul a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+nav ul a:hover {
+    text-decoration: line-through;
+    color: #00F3BB;
+}
+
+/*--------------- Sección uno ---------------*/
+.section-one {
+    color: #060A24;
+    padding: 5em .6em 1.5em .6em;
+}
+
+.section-one header span{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2.2rem;
+}
+
+.section-one header :last-child {display: block;}
+
+.section-one header :nth-child(2) {text-decoration: line-through;}
+
+.section-one article p {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 1em 0 2.5em 0;
+}
+
+.section-one article a {
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #060A24;
+    font-weight: bold;
+    background-color: #00F3BB;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: .7em 0;
+}
+
+.section-one article a:hover {
+    color: #FFFFFF;
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+/*--------------- Sección de episodios ---------------*/
+.podcast-section {
+    color: #FFFFFF;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
+    padding: 6em .6em 8em .6em;
+}
+
+.podcast-section h3 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    padding-bottom: .5em;
+}
+
+.podcast-section div iframe {margin-top: .5em;}
+
+/*--------------- Sección nosotros ---------------*/
+.about-section {
+    padding: 1.5em .6em;
+    color: #060A24;
+}
+
+.about-section figure {margin-bottom: -6em;}
+
+.about-section figure img {
+    width: 100%;
+    position: relative;
+    top: -7em;
+}
+
+.about-section article h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    padding-bottom: .5em;
+}
+
+.about-section article h3 span {display: block;}
+
+.about-section article p {font-family: 'IBM Plex Mono', monospace;}
+
+/*--------------- Sección Invitadas/os estelares ---------------*/
+.guests-section h3 {
+    color: #060A24;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    padding: .5em .6em;
+}
+
+.guests-section h3 span {display: block;}
+
+.guests-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.guests-gallery img {width: 100%;}
+
+/*--------------- Sección nuestros temas ---------------*/
+.topics-section h3 {
+    color: #060A24;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    padding: .5em .6em;
+}
+
+.topics-section h3 span {display: block;}
+
+.topics-items figure {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+.topics-items figure img {padding: .5em;}
+
+.topics-items figure figcaption span {display: block;}
+
+/*--------------- Sección últimas novedades ---------------*/
+.latestnews-section {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    padding: 4em .6em 4em .6em;
+    text-align: center;
+}
+
+.latestnews-section h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #FFFFFF;
+    padding-bottom: 1em;
+}
+
+.latestnews-section h3 span {display: block;}
+
+.latestnews-section a {
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #060A24;
+    font-weight: bold;
+    background-color: #00F3BB;
+    width: 100%;
+    display: block;
+    padding: .7em 0;
+}
+
+.latestnews-section a:hover {
+    color: #FFFFFF;
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+/*--------------- Copy right y redes sociales ---------------*/
+footer {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #060A24;
+    text-align: center;
+}
+
+footer p {padding: 1em;}
+
+footer ul li {
+    display: inline-block;
+    padding: .5em 1em;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #060A24;
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+
+    /*--------------- Navegación ---------------*/
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, .8);
+    }
+
+    nav {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-header {display: inline-block;}
+
+    .nav-header img {height: 2em;}
+
+    .nav-header i {display: none;}
+
+    nav ul {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    nav ul li {display: inline-block;}
+
+    nav ul a {color: #060A24;}
+
+    /*--------------- Sección uno ---------------*/
+    .section-one {padding: 10em 0 .5em 10em;}
+    
+    .section-one header span{font-size: 4rem;}
+    
+    .section-one header :last-child {display: inline-block;}
+    
+    .section-one article p {width: 55%;}
+    
+    .section-one article a {width: 15em;}
+
+    /*--------------- Sección de episodios ---------------*/
+    .podcast-section {
+        clip-path: polygon(0 12%, 100% 0%, 100% 88%, 0% 100%);
+        padding: 10em 5em 10em 5em;
+    }
+
+    .podcast-section h3 {
+        font-size: 2.5rem;
+        padding-left: 2em;
+    }
+
+    .podcast-section div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .podcast-section div iframe {
+        margin-top: 1em;
+        margin-bottom: 2em;
+        width: 48%;
+    }
+
+    /*--------------- Sección nosotros ---------------*/
+    .about-section {
+        padding: 1.5em 10em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-section figure {
+        width: 50%;
+        margin-bottom: -7em;
+    }
+
+    .about-section figure img {
+        width: 80%;
+        top: -8em;
+    }
+
+    .about-section article {width: 50%;}
+
+    .about-section article h3 {font-size: 2.5rem;}
+
+    .about-section article h3 span {display: inline-block;}
+
+    /*--------------- Sección Invitadas/os estelares ---------------*/
+    .guests-section h3 {
+        font-size: 2.5rem;
+        padding: .5em 4em;
+    }
+    
+    .guests-section h3 span {display: inline-block;}
+    
+    .guests-gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 1em;
+    }
+    
+    .guests-gallery img {width: 33.3%;}
+
+    /*--------------- Sección nuestros temas ---------------*/
+    .topics-section h3 {
+        font-size: 2.5rem;
+        padding: 1.5em 4em;
+    }
+
+    .topics-section h3 span {display: inline-block;}
+
+    .topics-items {
+        display: flex;
+        justify-content: center;
+    }
+
+    .topics-items figure {
+        padding-left: 1.7em;
+        padding-right: 1.7em;
+    }
+
+    /*--------------- Sección últimas novedades ---------------*/
+    .latestnews-section {
+        clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+        padding: 10em 0 8em 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .latestnews-section h3 {font-size: 2.5rem;}
+
+    .latestnews-section h3 span {display: inline-block;}
+
+    .latestnews-section a {width: 18em;}
+
+    /*--------------- Copy right y redes sociales ---------------*/
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 5em;
+    }
+
+    footer p {padding: 0;}
+
+    footer ul li {
+        display: inline-block;
+        padding: 0 1em;
+    }
+
+}
