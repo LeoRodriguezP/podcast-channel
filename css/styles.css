@@ -53,14 +53,17 @@ nav ul a:hover {
     padding: 5em .6em 1.5em .6em;
 }
 
-.section-one header span{
+.section-one header h3 {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 2.2rem;
+    font-weight: normal;
 }
 
-.section-one header :last-child {display: block;}
+.section-one header h3 > :nth-child(1) {text-decoration: line-through;}
 
-.section-one header :nth-child(2) {text-decoration: line-through;}
+.section-one header h3 > :nth-child(2) {display: block;}
+
+.section-one header h3 span :nth-child(1) {color: #0000EC;}
 
 .section-one article p {
     font-family: 'IBM Plex Mono', monospace;
@@ -256,9 +259,9 @@ footer ul li a {
     /*--------------- Sección uno ---------------*/
     .section-one {padding: 10em 0 .5em 10em;}
     
-    .section-one header span{font-size: 4rem;}
+    .section-one header h3 {font-size: 4rem;}
     
-    .section-one header :last-child {display: inline-block;}
+    .section-one header h3 > :nth-child(2) {display: inline-block;}
     
     .section-one article p {width: 55%;}
     
