@@ -129,6 +129,10 @@ nav ul a:hover {
 
 .about-section article p {font-family: 'IBM Plex Mono', monospace;}
 
+.about-section article :nth-child(2) {
+    padding-bottom: 1em;
+}
+
 /*--------------- Sección Invitadas/os estelares ---------------*/
 .guests-section h3 {
     color: #060A24;
